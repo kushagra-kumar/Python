@@ -2,7 +2,7 @@
 import argparse
 
 # To run the program -> python frequentword.py --filepath <file_path>
-# e.g. python frequentword.py --filepath "C:\Users\lenovo\Desktop\Python\code"
+# e.g. python frequentword.py --filepath "C:\Users\lenovo\Desktop\Python\code\story"
 
 
 parser = argparse.ArgumentParser(description="Parse the input file path")
@@ -11,7 +11,7 @@ args = parser.parse_args()
 file_path = args.filepath
 #print("file_path")
 
-FH = open("story","r")
+FH = open(file_path,"r")
 text = FH.read()
 words = text.split()
 #print(text.split())
